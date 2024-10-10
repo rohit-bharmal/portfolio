@@ -1,5 +1,6 @@
 import React from "react";
-import videoSrc from "../assets/bg2.mp4";
+import videoSrc from "../assets/bg.mp4";
+import { Link } from "react-router-dom";
 
 export default function MainPage() {
   return (
@@ -14,6 +15,22 @@ export default function MainPage() {
           className="video-background"
         ></video>
         <div className="container">
+          <div>
+            <ul className="header-list-container">
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <a href="#ach">Achievements</a>
+              </li>
+            </ul>
+          </div>
           <div className="title">
             <h1>Rohit Bharmal</h1>
             <p>

@@ -5,10 +5,7 @@
 .container{
   max-width: 1440px;
   margin: auto;
-  position: relative;
   z-index: 1;
-  color: white;
-  top: 50%;
 }
 
 
@@ -33,12 +30,12 @@
   margin: auto;
   position: relative;
   z-index: 1;
-  color: #fff;
+  color: #000;
   top: 50%;
 }
 
 .rhLinkText {
-  color: #fff;
+  color: #06c;
 }
 
 h1 {
@@ -53,4 +50,15 @@ p {
 
 a {
   color: #06c;
+}
+
+.header-list-container {
+display: flex;
+justify-content: flex-end;
+font-size: 24px;
+list-style-type: none;
+}
+
+li{
+  padding: 8px;
 }

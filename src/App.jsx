@@ -1,13 +1,16 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MainPage from "./components/MainPage";
+import About from "./components/About";
 import './App.css'
-import MainPage from './components/MainPage'
 
-function App() {
-
+export default function App() {
   return (
-    <>
-    <MainPage/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  );
 }
-
-export default App
